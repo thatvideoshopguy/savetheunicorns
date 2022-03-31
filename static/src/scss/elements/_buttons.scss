@@ -10,17 +10,18 @@ input[type='submit'] {
 .button {
     display: inline-block;
     padding: 0 1rem;
-    line-height: 2rem;
-    font-size: 1rem;
+    line-height: 1.65rem;
+    font-size: 10rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
-    background: $color-primary;
-    color: $color-white;
+    background: $color-yellow;
+    color: $color-black;
+    border-radius: 1rem;
 
     &:hover,
     &:focus {
-        background: darken($color-primary, 2.5%);
+        background: darken($color-yellow, 5%);
     }
 
     &.button--secondary {
@@ -29,20 +30,30 @@ input[type='submit'] {
 
         &:hover,
         &:focus {
-            background: darken($color-secondary, 2.5%);
+            background: darken($color-secondary, 5%);
         }
     }
 
     &.button--outline {
         background: none;
-        border: 0.125rem solid $color-primary;
+        border: 0.125rem solid $color-yellow;
         line-height: 1.75rem;
         color: $color-black !important;
 
         &:hover,
         &:focus {
-            background: $color-primary;
+            background: $color-yellow;
             color: $color-white;
         }
     }
+
+    &.button--highlight {
+        font-size: inherit;
+        font-weight: 700;
+    }
+}
+
+.highlight-btn {
+    padding: 5px 20px;
+    background: #fdd36b;
 }

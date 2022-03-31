@@ -8,10 +8,10 @@ TEMPLATES[0]["OPTIONS"]["debug"] = True
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.environ.get("DJANGO_DATABASE_NAME", "savetheunicorns_django"),
-        "USER": "",
-        "PASSWORD": "",
-        "PORT": "",
+        "NAME": os.environ.get("DJANGO_DATABASE_NAME"),
+        "USER": os.environ.get("PGUSER"),
+        "PASSWORD": os.environ.get("PGPASSWORD"),
+        "PORT": os.environ.get("PGPORT"),
     }
 }
 

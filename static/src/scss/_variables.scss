@@ -3,11 +3,20 @@ $base-font-size: 1rem !default;
 $base-line-height: 1.5 !default;
 $base-font: 'Open Sans';
 
-// Colors
-$color-primary: #00e0ba !default;
-$color-secondary: #c5c5c5 !default;
+//Secondary Fonts
+$secondary-font: 'Corben', cursive;
+$secondary-weight: 700;
 
-$color-black: #000000 !default;
+// Colors
+$color-primary: #E64398 !default;
+$color-primary-alt: #F172A1 !default;
+$color-secondary: #FAF8FB !default;
+
+$color-yellow:#FDD36B !default;
+$color-blue-grey:#A1C2D1 !default;
+$color-purple:#B29BC7 !default;
+
+$color-black: #3E3E3E !default;
 $color-white: #ffffff !default;
 $color-grey: #a0a0a0 !default;
 $color-grey-light: #d3d3d3 !default;
@@ -20,3 +29,7 @@ $breakpoint-mobile-small: 460px;
 $breakpoint-mobile: 640px;
 $breakpoint-desktop: 960px;
 $breakpoint-desktop-large: 1280px;
+
+// Nav Fonts
+$nav-font:'Raleway', sans-serif;
+$nav-weight: 700;

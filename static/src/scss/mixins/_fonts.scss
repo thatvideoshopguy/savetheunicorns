@@ -1,0 +1,5 @@
+@mixin google-fonts {
+    @import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Raleway:wght@800;900&display=swap');
+}
+
+@include google-fonts();

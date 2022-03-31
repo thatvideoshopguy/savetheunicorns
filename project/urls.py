@@ -1,3 +1,4 @@
+from re import template
 from django.apps import apps
 from django.conf import settings
 from django.conf.urls.static import static
@@ -13,6 +14,8 @@ from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from core.views import server_error
+
+from apps.sightings.views import SightingsPageView
 
 handler500 = server_error
 
@@ -46,5 +49,9 @@ if apps.is_installed("debug_toolbar"):
 urlpatterns += static(settings.STATIC_URL, never_cache(staticfiles_serve))
 urlpatterns += static(settings.MEDIA_URL, never_cache(serve), document_root=settings.MEDIA_ROOT)
 
+# Sightings App
+urlpatterns += [path("sightings/", SightingsPageView.as_view(), name="sightings")]
+
 # Wagtail catch-all
 urlpatterns += [path("", include(wagtail_urls))]
+

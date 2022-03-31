@@ -3,6 +3,7 @@
 
 # Python
 *.py[co]
+__pycache__/
 
 # Testing
 .coverage
@@ -29,3 +30,7 @@ static/dist
 *.vscode
 .vscode
 .vscode/*
+
+# ENV
+*.env
+.env

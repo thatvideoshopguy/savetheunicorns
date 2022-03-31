@@ -33,11 +33,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # Email
 # https://docs.djangoproject.com/en/3.2/ref/settings/#email
 
-ADMINS = [("Developer Society", "studio@dev.ngo")]
+ADMINS = [("Kyle Stevenson", "me@kylestevenson.io")]
 MANAGERS = ADMINS
 
-SERVER_EMAIL = os.environ.get("SERVER_EMAIL", f"{PROJECT_SLUG}@devemail.org")
-DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", f"{PROJECT_SLUG}@devemail.org")
+SERVER_EMAIL = os.environ.get("SERVER_EMAIL", f"{PROJECT_SLUG}@kylestevenson.io")
+DEFAULT_FROM_EMAIL = os.environ.get("DEFAULT_FROM_EMAIL", f"{PROJECT_SLUG}@kylestevenson.io")
 EMAIL_SUBJECT_PREFIX = f"[{PROJECT_SLUG}] "
 
 PROJECT_APPS_ROOT = BASE_DIR / "apps"
@@ -83,7 +83,7 @@ THIRD_PARTY_APPS = [
     "wagtailfontawesomesvg",
 ]
 
-PROJECT_APPS = ["pages", "settings.apps.SettingsConfig"]
+PROJECT_APPS = ["pages", "apps.sightings", "settings.apps.SettingsConfig"]
 
 INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
